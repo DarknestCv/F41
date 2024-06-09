@@ -1,0 +1,41 @@
+.container{
+  background: rgb(106, 7, 7);
+  padding: 50px;
+  position: relative;
+}
+
+.item1{
+  padding: 30px;
+  background: red;
+  /*! дефолтне значення */
+  /* position: static; */
+  /*! позиц. відносно свого місця не втрачаючи його */
+  /* position: relative; */
+  /* top: -60px; */
+  /* right: 60px; */
+  /* top right left... */
+
+  /*!прикріп до менітора */
+  /* position: fixed;
+  bottom: 100px; */
+
+  /*! */
+  position: sticky;
+  top: 0px;
+
+}
+.item2{
+  padding: 30px;
+  background: blue;
+  /*! позиц. відносно свого місця втрачаючає його */
+  /* position: absolute;
+  bottom: 100px;
+  right: 0px; */
+
+  
+
+}
+.item3{
+  padding: 30px;
+  background: greenyellow;
+}

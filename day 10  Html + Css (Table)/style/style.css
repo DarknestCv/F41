@@ -1,0 +1,76 @@
+/* table, th, td{
+  border: 2px solid black;
+
+  border-spacing: 10px 10px;
+  /*! відступи між коміркуами */
+
+  /* border-collapse: collapse; */
+  /*! забирає подвоєння бордерів  */
+
+  /* caption-side: top; */
+  /*! позиціювання заголовка таблиці (верх або низ) */
+  
+  /* empty-cells: hide; */
+  /*! показувати або ні пусті комірки */
+/* }
+
+thead{
+  color: red;
+} */
+
+/* tbody{ */
+  /* background: blue; */
+/* } */
+
+/* tfoot{ */
+  /* height: 50px;
+  text-align: right; */
+  /*! по горизонталі */
+  /* vertical-align: bottom; */
+  /*! по вертикалі */
+/* }  */
+
+
+
+/* ? приклад з погодою */
+table, th, td{
+  
+  border: 1px solid rgb(30, 213, 222);
+  border-collapse: collapse;
+}
+
+thead{
+  background: #ccc;
+}
+
+tbody tr td:nth-child(1){
+  width: 300px;
+}
+
+tbody tr td:nth-child(2){
+  background-color: rgb(155, 214, 246);
+}
+
+tbody tr td:nth-child(3){
+  background-color: rgb(253, 206, 206);
+}
+
+tbody tr td:nth-child(2),
+tbody tr td:nth-child(3){
+  text-align: center;
+  width: 60px;
+  height: 35px;
+}
+
+tfoot{
+  color: red;
+  text-align: center;
+}
+
+.r{
+  background-color: blue;
+}
+
+tr:hover .r{
+  background-color: red;
+}

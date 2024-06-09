@@ -1,0 +1,21 @@
+.bg-footer{
+  background: #cb3362;
+  padding: 40px;
+}
+
+.bg-footer li{
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.bg-footer ul{
+  text-align: center;
+}
+
+.bg-footer p{
+  font-size: 12px;
+  color: #ffffff;
+  font-family: RobotoR;
+  text-align: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,197 @@
+.container{
+  width: 600px;
+  height: 800px;
+  border: 2px solid black;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* ! 1 */
+/* header{
+  border: 2px solid black;
+  margin: 5px;
+  height: 15%;
+}
+
+.box1{
+  margin: 5px;
+  border: 2px solid black;
+  width: 120px;
+  height: 500px;
+  float: left;
+}
+
+.box2{
+  margin: 5px;
+  border: 2px solid black;
+  width: 120px;
+  height: 500px;
+  float: right;
+}
+
+.box3{
+  margin: 5px;
+  border: 2px solid black;
+  width: 322px;
+  height: 620px;
+  float: right;
+}
+
+footer{
+  margin: 5px;
+  border: 2px solid black;
+  height: 5%;
+  clear: both;
+} */
+
+/* ! 2 */
+
+/* header{
+  border: 2px solid black;
+  margin: 5px;
+  height: 15%;
+}
+
+.box1{
+  border: 2px solid black;
+  width: 150px;
+  height: 500px;
+  margin: 5px;
+  float: left;
+}
+
+.box2{
+  border: 2px solid black;
+  margin: 5px;
+  width: 420px;
+  height: 600px;
+  float: right;
+}
+
+footer{
+  margin: 5px;
+  border: 2px solid black;
+  height: 7%;
+  clear: both;
+} */
+/* ! 3 */
+
+/* header{
+  border: 2px solid black;
+  margin: 5px;
+  height: 15%;
+}
+
+.box1{
+  border: 2px solid black;
+  width: 150px;
+  height: 500px;
+  margin: 5px;
+  float: right;
+}
+
+.box2{
+  border: 2px solid black;
+  margin: 5px;
+  width: 424px;
+  height: 600px;
+  float: right;
+}
+
+footer{
+  margin: 5px;
+  border: 2px solid black;
+  height: 7%;
+  clear: both;
+} */
+
+/* !--------- */
+div{
+  border: 1px solid black;
+}
+
+.A{
+  margin: 0 auto;
+  width: 700px;
+  height: 800px;
+  background: red;
+}
+
+.B{
+  width: 20%;
+  height: 760px;
+  background: #FF9933;
+  margin: 15px;
+  float: left;
+}
+
+.C{
+  width: 70%;
+  height: 760px;
+  background: yellow;
+  margin: 15px;
+  float: left;
+}
+
+.D{
+  width: 94%;
+  height: 29%;
+  background: #82C341;
+  margin: 15px;
+  float: left;
+}
+
+.E{
+  width: 30%;
+  height: 87%;
+  background: #4275BF;
+  margin: 15px;
+  float: left;
+}
+
+.F{
+  width: 56%;
+  height: 87%;
+  background:#6B50A1;
+  margin: 15px;
+  float: left;
+}
+
+.H{
+  width: 38%;
+  height: 85%;
+  background:#898989;
+  margin: 15px;
+  float: left;
+}
+
+.G{
+  width: 37%;
+  height: 85%;
+  background: #986699;
+  margin: 15px;
+  float: left;
+}
+
+.I{
+  width: 70%;
+  height: 33%;
+  background: #fff;
+  margin: 15px;
+  float: left;
+}
+
+.last_G{
+  width: 89%;
+  height: 85%;
+  background: #986699;
+  margin: 15px;
+  float: left;
+}
+
+
+
+
+span{
+  position: absolute;
+}

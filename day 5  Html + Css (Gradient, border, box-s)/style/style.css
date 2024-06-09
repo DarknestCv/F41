@@ -1,0 +1,88 @@
+.container{
+  /* background-color: red; */
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+
+  /* ! градієнти*/
+  /* ? лінійний градієнт*/
+  /* background: linear-gradient(blue, red); */
+  /* background: linear-gradient(to right, blue, red); */
+  /* background: linear-gradient(to left, blue, red); */
+  /* background: linear-gradient(to top, blue, red); */
+  /* background: linear-gradient(to bottom, blue, red); */
+  /* //////////////////////////////////////////////// */
+  /* background: linear-gradient(to bottom right, blue, red); */
+  /* background: linear-gradient(to bottom left, blue, red); */
+  /* background: linear-gradient(to top left, blue, red); */
+  /* background: linear-gradient(to top right, blue, red); */
+  /* //////////////////////////////////////////////////////// */
+  /* background: linear-gradient(0deg, blue, red); */
+  /* background: linear-gradient(90deg, blue, red); */
+  /* background: linear-gradient(-90deg, blue, red); */
+  /* //////////////////////////////////////////////////////////// */
+  /* background: linear-gradient(orange, blue, red, yellow ); */
+  /* //////////////////////////////////////////////////////////// */
+  /* background: linear-gradient(180deg, rgba(108, 236, 9, 1) 0%,rgba(71, 134, 22, 1) 9%, 
+  rgba(33, 64, 9, 1) 30%, rgba(29, 26, 212, 1) 76%, rgba(13, 12, 95, 1) 100%); */
+
+  /* //////////////////////////////////////////////////////////////////////////////////// */
+
+  /* background: radial-gradient(red, blue); */
+  /* background: radial-gradient(red 10px, yellow 30%, #1e90ff); */
+  /* background: radial-gradient(at 20% 20%,red 10px, yellow 30%, #1e90ff); */
+
+  /* //////////////////////////////////////////////////////////////////// */
+  /* background: linear-gradient(25deg, rgba(231,21,18,1) 0%, rgba(218,173,20,1) 24%, rgba(108,183,82,1) 44%, rgba(75,164,192,1) 61%, rgba(46,101,216,1) 76%, rgba(79,21,237,1) 89%, rgba(255,0,0,1) 100%, rgba(255,0,254,1) 104%, rgba(255,0,159,1) 114%, rgba(255,0,69,1) 132%); */
+
+
+  background: radial-gradient(circle, rgba(231,21,18,1) 0%, rgba(218,173,20,1) 24%, rgba(108,183,82,1) 44%, rgba(75,164,192,1) 61%, rgba(46,101,216,1) 76%, rgba(79,21,237,1) 89%, rgba(255,0,0,1) 100%, rgba(255,0,254,1) 104%, rgba(255,0,159,1) 114%, rgba(255,0,69,1) 132%);
+
+  /* ? border */
+  /* border-color: rgb(4, 0, 8); */
+  /* border-width: 13px; */
+  /* solid | none | hidden | dotted | dashed | double | groove | ridge | inset | outset*/
+  /* border-style: solid;
+  border-width: 20px 30px 40px 50px; */
+  /* border-width: 20px 0px 40px 50px; */
+
+  /* border-top: ;
+  border-bottom: ;
+  border-right: ;
+  border-left: ; */
+
+  /* border: 15px solid rgb(9, 0, 0); */
+  /* border-top: 13px solid red; */
+
+  /* border-radius: 40px; */
+  /* border-radius: 10px; */
+  /* border-radius: 100px; */
+
+  /* border-radius: 50%; */
+  /* border-radius: 100px 300px; */
+  /* border-radius: 100px 200px 300px 400px; */
+
+  /*? box-shadow */
+
+  /*! x and y shadow, blur, spread, color */
+  /* box-shadow: -30px 30px 40px 0px red; */
+  /* box-shadow:inset -30px -30px 9px 0px; */
+}
+
+.container:hover{
+  width: 510px;
+  height: 510px;
+  box-shadow: 20px 20px 9px 0px rgb(62, 62, 62);
+}
+
+
+
+
+
+h1{
+  font-size: 50px;
+    /*? text-shadow */
+  text-shadow: -10px 10px 2px red;
+  margin-bottom: 100px;
+}
+

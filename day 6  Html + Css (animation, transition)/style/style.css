@@ -1,0 +1,100 @@
+/* ? animaition */
+
+.content{
+  width: 150px;
+  height: 150px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+
+  /* ! назва ключових кадрів */
+  /* animation-name: example; */
+  /* ! швидкісьть анімації s or ms (0% до 100%)*/
+  /* animation-duration: 4s; */
+  /* animation-duration: 1000ms;
+  animation-duration: 2.5s; */
+  /*! прискорення */
+  /* animation-timing-function: linear; */
+  /* animation-timing-function: ease; */
+  /* animation-timing-function: ease-in; */
+  /* animation-timing-function: ease-out; */
+  /* animation-timing-function: ease-in-out; */
+  /* animation-timing-function: step-end;
+  animation-timing-function: step-start; */
+
+  /*!Затримка*/
+  /* animation-delay: 4s; */
+
+  /*!К-ть повтерень анімації */
+  /* animation-iteration-count: 3; */
+  /* animation-iteration-count: infinite; */
+  /*?infinite нескінченна анімація  */
+
+  /*! наборот або пінпонг */
+  /* animation-direction: alternate; */
+
+  /*!де буде кець*/
+  /* animation-fill-mode: forwards; */
+
+  /*! пауза анімації */
+  /* animation-play-state: paused; */
+
+  /* ?скорочено */
+  animation: example 4s linear 1s infinite alternate forwards;
+}
+
+.content:hover{
+  animation-play-state: paused;
+}
+
+
+@keyframes example {
+  0%{
+    left: 0;
+  }
+  50%{
+    background: blue;
+    border-radius: 0%;
+  }
+  100%{
+    left: 800px;
+    background: greenyellow;
+  }
+}
+
+
+/* /////////////////////////////////////////////////////////// */
+
+/*! transition */
+
+.square{
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  background: rgb(22, 224, 22);
+
+  /*! властивості які змінюються */
+  /* transition-property: all; */
+  /* transition-property: background, width, height; */
+
+  /*!за який час ма.ть змінитися стилі*/
+  /* transition-duration: 3s; */
+  /* transition-duration: 1s, 2s ,3s; */
+
+  /*! прискорення і уповільнення*/
+  /* transition-timing-function: ease; */
+
+  /*! затримка */
+  /* transition-delay: 3s; */
+  /* transition-delay: 1s, 2s, 3s; */
+
+  /*? скорочено */
+  transition: all 900ms ease-in-out 1s;
+}
+
+
+.square:hover{
+  background: rgb(80, 25, 209);
+  width: 350px;
+  height: 350px;
+}

@@ -1,0 +1,125 @@
+/*? transform */
+
+.transform{
+  margin: 100px 200px;
+  border: 2px solid black;
+  display: inline-block;
+
+  /* overflow: hidden; */
+}
+
+.transform .transform_img{
+  width: 400px;
+  
+  transition: all 2s linear;
+  
+  /*! опорна точка  */
+  /* transform-origin: top left; */
+  /* transform-origin: 0 0; */
+  
+}
+
+
+.transform:hover .transform_img{
+  /*! обертання ел і також може бути мінусовим  */
+  /* transform: rotate(60deg); */
+  /*! маштабування 1дефол, - вивертаємо картинку*/
+  /* transform: scale(-1); */
+  /* transform: scale(4); */
+  /* transform: scale(-1, 1); */
+  /* transform: scaleX(1.5);
+  transform: scaleY(1.5); */
+
+  /*! зміщення по осі X and Y */
+  /* transform: translate(50px, 50px); */
+
+  /*! розтягування */
+  /* transform: skew(20deg, 20deg); */
+
+  transform: rotate(10deg) scale(1.5) skew(10deg);
+
+}
+
+/* !/////////////////////////////////////////////// */
+
+/*? filter */
+
+.filter{
+  margin: 100px;
+}
+
+.filter .filter_img{
+  width: 500px;
+  transition: all 2s linear;
+}
+
+.filter_img:hover{
+  /*! розмиття  */
+  /* filter: blur(300px); */
+
+  /*! ЧБ 0 > 100 %  */
+  /* filter: grayscale(100%); */
+
+  /*! тіні */
+  /* filter: drop-shadow(15px 17px 5px red); */
+
+  /*! яскравісьть 100 default */
+  /* filter: brightness(200%); */
+
+  /*! контраст 100 default */
+  /* filter: contrast(200%); */
+
+  /*! колірне коло 0 до 360deg */
+  /* filter: hue-rotate(100deg); */
+
+  /*! негатив */
+  /* filter: invert(100%); */
+
+  /*! насищеннісьть */
+  /* filter: saturate(460%); */
+
+  /*! ефект старого фото */
+  /* filter: sepia(100%); */
+
+  /*! прозорісьть */
+  /* filter: opacity(0%); */
+
+  /* filter: blur(2px) contrast(150%) drop-shadow(10px 10px 5px red); */
+
+}
+
+#triangle-bottomleft {
+  margin: 100px;
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red; 
+	border-right: 100px solid transparent;
+  /* box-shadow: 20px 20px 5px 0; */
+  filter: drop-shadow(15px 17px 5px rgb(0, 0, 0));
+
+}
+
+
+#star-six {
+  margin: 100px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	position: relative;
+  /* box-shadow: 20px 20px 5px 0; */
+  filter: drop-shadow(15px 17px 5px rgb(0, 0, 0));
+
+}
+#star-six:after {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+}

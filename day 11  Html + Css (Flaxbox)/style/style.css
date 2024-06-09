@@ -1,0 +1,83 @@
+/* http://paratapok.ru/wp-content/uploads/2018/07/css-flexbox-2.png */
+
+.container{
+  border: 4px solid blueviolet;
+  height: 97vh;
+
+
+  display: flex;
+  /*! вказуємо що в цьому контейнері будемо все позицінуювати flex  */
+
+  /* flex-direction: row; */
+  /*! Змінює напрямок головної(main) вісь */
+
+  /** flex-start flex-end center space-around space-between space-evenly*/
+  justify-content: space-between;
+  /*! позиціювання по головній вісь(main)  */
+  
+  /**flex-start flex-end center*/
+  align-items: flex-start;
+  /*! керує додатковою вісь  */
+
+  /* flex-wrap: wrap; */
+  /*! дозволяє переносити елементи на новий ряд */
+  
+  /** flex-start flex-end center space-around space-between space-evenly*/
+  align-content: space-evenly;
+  /*!працює як justify-content але з другорядною вісь, працює коли включений wrap  */
+}
+
+.itemAll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  border: 2px solid green;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  font-size: 60px;
+
+  flex-basis: 33%;
+  /*?  розмір по головній вісь*/
+}
+
+.item1{
+  /* order: 3; */
+  /*? якщо число найбільше то елкмент відправляється в кінуць */
+
+  /* align-self: flex-end; */
+  /*? позиціюнує окремий елемент по додатковій вісь */
+
+  /* flex-grow: 1; */
+  /*? скільки розміра займає відносно інших елемнентів в дробах */
+
+}
+
+.item2{
+  /* order: 1; */
+  /*? якщо число найбільше то елкмент відправляється в кінуць */
+
+  /* align-self: center; */
+  /*? позиціюнує окремий елемент по додатковій вісь */
+
+  /* flex-grow: 1; */
+  /*? скільки розміра займає відносно інших елемнентів в дробах */
+
+  /* flex-shrink: 2; */
+  /*? в скільки разів буде звужуватися скоріше при звуження екрана */
+
+}
+
+.item3{
+  /* order: 2; */
+  /*? якщо число найбільше то елкмент відправляється в кінуць */
+
+  /* align-self: flex-start; */
+  /*? позиціюнує окремий елемент по додатковій вісь */
+
+  /* flex-grow: 1; */
+  /*? скільки розміра займає відносно інших елемнентів в дробах */
+
+}
