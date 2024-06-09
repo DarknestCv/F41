@@ -1,0 +1,15 @@
+table{
+    width: 500px;
+    height: 150px;
+    border-collapse: collapse;
+}
+.botoom{
+    vertical-align: bottom;
+}
+.hight{
+    vertical-align: top;
+}
+.ugol{
+    vertical-align: bottom;
+    text-align: right;
+}
