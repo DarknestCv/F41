@@ -1,0 +1,74 @@
+.items{
+    border: 2px solid green;
+    color: red;
+    font-size: 25px;
+    padding: 15px;
+    font-weight: 900;
+  
+    /* overflow: scroll; */
+  }
+  
+  
+  .container{
+    height: 95vh;
+  
+    display: grid;
+    /*! в даному блоці позиціюнування буде по правилам грідів */
+  
+    /*! нам потрібно зробити шаблон стовпців */
+    /*? шаблон стовпців */
+    /* grid-template-columns: 100px 100px 100px 100px; */
+    /* grid-template-columns: 20% 50% 20% 10%; */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: 150px 1fr 100px; */
+    /* grid-template-columns:  repeat(10, 1fr); */
+    /* grid-template-columns:  repeat(10, 50px 100px 150px); */
+    grid-template-columns: 1fr 1fr 1fr;
+  
+    /*! все так само як і з стовпцями */
+    /*? шаблон рядків  */
+    /* grid-template-rows: 50px 100px 150px; */
+    /* grid-template-rows: 150px 150px 150px; */
+    grid-template-rows: 1fr 1fr 1fr;
+  
+    /*!відстань між колонками */
+    /** по вертикалі  */
+    /* grid-column-gap: 10px; */
+    /** по горизонталі  */
+    /* grid-row-gap: 10px; */
+    /** загально скорочена запис  */
+    grid-gap: 10px;
+  
+    /*!Розмір по висоті */
+    /* grid-auto-rows: 100px; */
+    grid-auto-rows: minmax(20px, auto);
+  
+    /*! вирівнювання всього разом  */
+    /** по вертикалі  */
+    justify-content: space-evenly;
+    /** по горизонталі  */
+    align-content: space-around;
+  
+    /*! вирівнювання в середині комірок */
+    /* align-items: center; */
+    /* justify-items: center; */
+    
+  } 
+  
+  .item_1, .item_4{
+    /* ! позиціювання в комірках */
+    /* align-self: end;
+    justify-self: end; */
+  }
+  
+  .item_5{
+    /*!скільки місця буде займати цей компонент відносно ліній  */
+    grid-column-start: 1;
+    grid-column-end: 3;
+  
+  
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+  
+  }
