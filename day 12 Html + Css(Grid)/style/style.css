@@ -63,12 +63,58 @@
   
   .item_5{
     /*!скільки місця буде займати цей компонент відносно ліній  */
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+    /* *Скороч запис */
+    grid-column: 1/3;
   
   
     grid-row-start: 1;
     grid-row-end: 2;
-    
-  
+    /* *Скороч запис */
+    grid-row: 1/2;
   }
+  .item_8{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+
+/* ????????//////////////////////////////////////////???????????? */
+
+.container2{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'navbar navbar navbar'
+    'sidebar main section'
+    'footer footer footer'
+    ;
+    grid-gap: 10px;
+
+    grid-template-columns: 250px 1fr 200px;
+    grid-template-rows: 150px 50px 1fr 80px;
+}
+
+
+.header{
+    grid-area: header;
+}
+
+.navbar{
+    grid-area: navbar;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+}
+.section{
+    grid-area: section;
+}
+.footer{
+    grid-area: footer;
+}

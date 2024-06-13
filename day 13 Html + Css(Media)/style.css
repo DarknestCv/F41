@@ -1,0 +1,50 @@
+/* @media[умова]{
+    [блок CSS]
+} */
+
+/* ? p - для пристороыв прінтерів */
+/* ? all - defolt */
+/* ? speech -  */
+/* @media print{
+    p{
+        color: blue;
+    }
+} */
+@media screen {
+    body{
+        background: blue;
+    }
+}
+/* !Умова яка має виконатися */
+
+/* * and це означає що всі умови мають бути виконані   */
+
+@media screen and (min-width:320px) and (max-width:770px) {
+    body{
+        background-color: aqua;
+    }
+    p{
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+/* * , - це має бути виконана хочаб 1 умова */
+@media screen and(min-width:920px) , (max-width:320px) {
+    body{
+        background-color: blue;
+    }
+}
+@media print and (not(color)){
+
+}
+
+/* * може відслідковувати орієнтацію екрану */
+
+@media  screen and (orientation:portrait) {
+
+    body{
+        background-color: pink;
+    }
+    
+}
