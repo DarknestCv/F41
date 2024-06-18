@@ -1,0 +1,8 @@
+.row{
+    margin: 5px;
+    width: 600px;
+}
+.col{
+    padding: 5px;
+    margin: 5px;
+}
