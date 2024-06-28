@@ -1,0 +1,161 @@
+
+/* :active - активний стан елементу (коли на нього натиснули) */
+/* button:active{
+  background-color: red;
+  color: white;
+} */
+
+/* :any-link - вибирає будь-яку гіперсилку */
+/* :any-link{
+  color: rgb(101, 203, 23);
+} */
+
+/* :checked - вибирає відзначені елементи */
+input:checked{
+    border: 2px solid green;
+  }
+  
+  /* :default - вибирає елемсенти які є значенням за замовчуванням */
+  input:default {
+    background-color: #f6efef;
+  }
+  
+  /* :defined - вибирає елементи які мають значення */
+  :defined{
+    font-style: italic;
+  }
+  
+  /* rtl - з ліва на право ltr це з права на ліво */
+  /* :dir(rtl) {
+    text-align: left;
+  } */
+  
+  /* :disabled - вибирає вимкнуті елементи */
+  input:disabled{
+    opacity: 0.3;
+  }
+  
+  /* :enabled - вибирає включені  елементи */
+  input:enabled{
+    border: 6px solid blue;
+  }
+  
+  /* :empty - вибирає елементи без вмісту або без дочірніх елементів */
+  p:empty{
+    display: none;
+  }
+  
+  
+  /* p:first{
+    font-weight: bold;
+  } */
+  
+  /* :first-child - вибирає перший дочірній елемент */
+  div p:first-child{
+    color: blueviolet;
+    font-weight: bold;
+  }
+  
+  /* :first-of-type - перший елемент даного типу */
+  div p:first-of-type{
+    background-color: #b56262;
+  }
+  
+  div p:last-child{
+    background-color: brown;
+  }
+  
+  div span:last-of-type{
+    background-color: green;
+  }
+  
+  /* :focus - вибирає ел який має фокус вводу */
+  input:focus{
+    background-color: red;
+    font-weight: bold;
+  }
+  
+  
+  /* :hover - вибирає елемент при наведені */
+  /* div:hover p{
+    border: 3px solid black
+  } */
+  
+  /* :lang(en) - вибирає елементи зазначеної мови */
+  p:lang(en){
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* :link вибирає невідвіданні посилання */
+  a:link{
+    color: rgb(255, 208, 0);
+  }
+  
+  /* :visited вибирає відвіданні посилання */
+  a:visited{
+    color: rgb(255, 25, 0);
+  }
+  
+  /* :not() - виключає елемент який не відповідає даному селектору */
+  p:not(.special){
+    font-size: 25px;
+  }
+  
+  /* :nth-child - вибирає n дочірній елемент */
+  ul li:nth-child(2){
+    background-color: #1199a5;
+  }
+  /* ul li:nth-child(1n){
+    background-color: #a5115d;
+  }
+  ul li:nth-child(2n){
+    background-color: #63a81a;
+  } */
+  
+  /* з кінця */
+  ul li:nth-last-child(2){
+    background-color: #db0d0d;
+  }
+  
+  /* nth-of-type - вибирає елемент по порядку по типу тега */
+  div p:nth-of-type(1){
+    text-decoration: underline;
+  }
+  div span:nth-of-type(1){
+    text-decoration: underline;
+  }
+  
+  div span:nth-last-of-type(1){
+    text-decoration: underline;
+  }
+  
+  /* :only-child - вибирає елементи які є єдиними дочірніми елементами бітьків ел */
+  /* :only-of-type */
+  div:only-child{
+    font-size: 50px;
+  }
+  
+  /* :optional - вибирає елементи які не є обовязковими для заповнення */
+  input:optional{
+    border: 5px solid grey;
+  }
+  
+  /* :required - вибирає елементи які є обовязковими для заповнення */
+  input:required{
+    border: 5px solid rgb(87, 171, 13);
+  }
+  
+  :target{
+    border: 5px solid rgb(18, 13, 171);
+  }
+  
+  
+  :root{
+    --main-color: hotpink;
+    --pane-padding: 5px 42px;
+  }
+  
+  
+  p{
+    padding: var(--pane-padding);
+  }
