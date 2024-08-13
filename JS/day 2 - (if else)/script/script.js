@@ -10,17 +10,17 @@
 
 // if(1>2){console.log('ok')}
 
-const a = +prompt('enter 1 number')
-const b = +prompt('enter 2 number')
+// const a = +prompt('enter 1 number')
+// const b = +prompt('enter 2 number')
 
-if(a >= b){
-    alert('a(${a}) > b(${b})')
-}
-else if(a < b){
-    alert('a(${a}) < b(${b})')
-} else{
-    alert ('a(${a}) = b(${b})')
-}
+// if(a >= b){
+//     alert('a(${a}) > b(${b})')
+// }
+// else if(a < b){
+//     alert('a(${a}) < b(${b})')
+// } else{
+//     alert ('a(${a}) = b(${b})')
+// }
 // else if( a === b){
 //     alert('a(${a}) = b(${b})')
 // }
@@ -28,8 +28,8 @@ else if(a < b){
 // ! == - просто рівність 1 == '1' true тільки значення 
 // ! === - сувора рівність 1 === '1' false тип даних а потім тільки значення
 
-const x = 5
-const v = '5'
+// const x = 5
+// const v = '5'
 
 // 1) number === String => false
 // 2) 5 === 5
@@ -84,24 +84,24 @@ const v = '5'
 
 // ..........................................................................
 
-function month() {
-    const monthNumber = +document.querySelector('.monthNumber').value
-    if(monthNumber === 1 || monthNumber === 2 || monthNumber === 12){
-        console.log('Winter');
-    }
-    else if(monthNumber === 3 || monthNumber === 4 || monthNumber === 5){
-        console.log('Spring');
-    }
-    else if(monthNumber === 6 || monthNumber === 7 || monthNumber === 8){
-        console.log('Summer');
-    }
-    else if(monthNumber === 9 || monthNumber === 10 || monthNumber === 11){
-        console.log('fall! autumn');
-    }
-    else{
-        console.log('Invalid input');
-    }
-}
+// function month() {
+//     const monthNumber = +document.querySelector('.monthNumber').value
+//     if(monthNumber === 1 || monthNumber === 2 || monthNumber === 12){
+//         console.log('Winter');
+//     }
+//     else if(monthNumber === 3 || monthNumber === 4 || monthNumber === 5){
+//         console.log('Spring');
+//     }
+//     else if(monthNumber === 6 || monthNumber === 7 || monthNumber === 8){
+//         console.log('Summer');
+//     }
+//     else if(monthNumber === 9 || monthNumber === 10 || monthNumber === 11){
+//         console.log('fall! autumn');
+//     }
+//     else{
+//         console.log('Invalid input');
+//     }
+// }
 
 // ! тернальний оператор ( умова ? if True : if False)
 // const age = +prompt('How old are you ')
@@ -112,4 +112,31 @@ function month() {
 // }
 
 // ...........................................................................
-age >= 18 ? console.log('Lets go to geyGYM') : console.log('So bad, you dont going with us to geyGYM');
+// age >= 18 ? console.log('Lets go to geyGYM') : console.log('So bad, you dont going with us to geyGYM');
+
+
+// ! ПРАКТИКАААААААААААААААААААААААААААААААААААААААААААААААААААААААА
+// ? 1
+// const number = +prompt('Enter number')
+// if(number % 2 == 0){
+//     alert ('Введене число парне');
+// }else{
+//     alert ('Введене число непарне');
+// }
+// ? 2
+// const length = prompt('Введіть довжину прямокутника')
+// const width = prompt('Введіть ширину прямокутника')
+// let plo = length * width
+// alert('Площа прямокутника' + ' ' + plo)
+// ? 3
+// const a = +prompt('Введіть перше число')
+// const b = +prompt('Введіть друге число')
+// if(a > b){
+//     alert(`${a} > ${b}`)
+// }else if(a < b){
+//     alert(`${a} < ${b}`)
+// }else{
+//     alert(`${a} = ${b}`)
+// }
+// ? 4
+
