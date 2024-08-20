@@ -83,43 +83,99 @@ showMyName()
 
 ///////////////////////////////////////////////////////////////////////////////
 
-const $equal = document.querySelector('.equal')
+// const $equal = document.querySelector('.equal')
 
-const $plus = document.querySelector('.plus')
-const $minus = document.querySelector('.minus')
-const $multiplication = document.querySelector('.multiplication')
-const $division = document.querySelector('.division')
+// const $plus = document.querySelector('.plus')
+// const $minus = document.querySelector('.minus')
+// const $multiplication = document.querySelector('.multiplication')
+// const $division = document.querySelector('.division')
 
-$plus.addEventListener('click', plus)
-$minus.addEventListener('click', minus)
-$multiplication.addEventListener('click', multiplication)
-$division.addEventListener('click', division)
+// $plus.addEventListener('click', plus)
+// $minus.addEventListener('click', minus)
+// $multiplication.addEventListener('click', multiplication)
+// $division.addEventListener('click', division)
 
-function plus(){
-    const b = +document.querySelector('.b').value
-    const a = +document.querySelector('.a').value
+// function plus(){
+//     const b = +document.querySelector('.b').value
+//     const a = +document.querySelector('.a').value
 
-    let rus = a + b
-    $equal.textContent = rus
+//     let rus = a + b
+//     $equal.textContent = rus
+// }
+// function minus(){
+//     const b = +document.querySelector('.b').value
+//     const a = +document.querySelector('.a').value
+
+//     let rus = a - b
+//     $equal.textContent = rus
+// }
+// function multiplication(){
+//     const b = +document.querySelector('.b').value
+//     const a = +document.querySelector('.a').value
+
+//     let rus = a * b
+//     $equal.textContent = rus
+// }
+// function division(){
+//     const b = +document.querySelector('.b').value
+//     const a = +document.querySelector('.a').value
+
+//     let rus = a / b
+//     $equal.textContent = rus
+// }
+
+////////////////////////////////////////////////////////////////////////
+
+// function getNextDate(){
+//     let day = +prompt('Введіть дату')
+//     let month = +prompt('Введіть місяць')
+//     let year = +prompt('Введіть рік')
+
+//     day++
+
+//     if(month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12){
+//         if(day > 31){
+//             day = 1
+//             month++
+//         }
+//     } else if(month === 4 || month === 6 || month === 9 || month === 11){
+//         if(day > 30){
+//             day = 1
+//             month++
+//         }
+//     } else{
+//         if((year % 4 === 0 && year % 100 !=== 0) || year % 400 === 0){ // Високосний рік
+//             if(day > 29){
+//                 day = 1
+//                 month++
+//             }
+//         }else {
+//             if(day > 28){
+//                 day = 1
+//                 month++
+//             }
+//         }
+//     }
+
+//     if(month > 12){
+//         month = 1
+//         year++
+//     }
+
+    
+//     console.log();
+    
+// }
+// getNextDate()
+
+// ! ПРАКТИКАААА
+
+// * 1
+function plos(a){
+    const pl = a * a
+    console.log('Площа кола' + ' ' + pl + 'п');
 }
-function minus(){
-    const b = +document.querySelector('.b').value
-    const a = +document.querySelector('.a').value
 
-    let rus = a - b
-    $equal.textContent = rus
-}
-function multiplication(){
-    const b = +document.querySelector('.b').value
-    const a = +document.querySelector('.a').value
-
-    let rus = a * b
-    $equal.textContent = rus
-}
-function division(){
-    const b = +document.querySelector('.b').value
-    const a = +document.querySelector('.a').value
-
-    let rus = a / b
-    $equal.textContent = rus
-}
+plos(2)
+plos(25)
+plos(45)
