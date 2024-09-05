@@ -97,10 +97,10 @@
 
 // ? split() - розділяє строку по певним символам в масив
 
-const numStr = '1,2,34,54,564,56,76,67,54,43,34,56,67,687'
+// const numStr = '1,2,34,54,564,56,76,67,54,43,34,56,67,687'
 
-const numArr = numStr.split(',')
-console.log(numArr);
+// const numArr = numStr.split(',')
+// console.log(numArr);
 
 // ? join - робить з масива строку
 
@@ -153,3 +153,25 @@ console.log(numArr);
 // }, 0)
 
 // console.log(reduce);
+
+
+// ! Practick work
+
+// * 1
+// const objects = ['Toys','Bread','Spice']
+// function masiv() {
+//     console.log(objects.includes('Bread'));
+// }
+// masiv()
+
+// * 2
+// const array = ['Toys','Bread','Spice']
+
+// function koil() {
+//     console.log(array.indexOf('Spice'));
+// }
+// koil()
+
+// * 3
+
+
