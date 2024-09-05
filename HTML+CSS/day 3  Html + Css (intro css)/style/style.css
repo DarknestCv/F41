@@ -127,3 +127,55 @@ p{
   margin-top: ;
   margin-bottom: ; */
 }
+
+
+
+
+h1{
+  width: ;
+  height: ;
+  padding: 10 11 ;
+  border: color 2px solid;
+  margin: 11 22 33 44;
+  border-radius: 50%;
+
+  filter: blur();
+  transform: rotate();
+
+  background: ;
+  color
+
+}
+
+1) margin: 0 auto;
+2) text-align: center;
+div{
+  float: right;
+  position: relative;
+  display: flex;
+  display: grid;
+}
+
+
+h3{
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  transition: all;
+}
+
+@keyframes identifier {
+  0
+  50
+  100
+}
+
+
+
+a:active{}
+a:visited{}
+a:hover{}
+
+
+a::after{}
+a::before{}
+
+

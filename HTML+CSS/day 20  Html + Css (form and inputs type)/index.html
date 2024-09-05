@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + CSS</title>
+
+    <style>
+      form {
+        margin: 0 auto;
+        width: 500px;
+      }
+      input {
+        margin-bottom: 15px;
+        border: 3px solid green;
+        border-radius: 10px;
+        font-size: 25px;
+        color: blue;
+        padding: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="inputs" method="post">
+      <!-- текстовий інпут -->
+      <label for="firstName">First name</label>
+      <input
+        id="firstName"
+        type="text"
+        name="firstName"
+        value=""
+        autocomplete="on"
+        placeholder="Text input"
+      />
+
+      <!-- ! password input -->
+      <input type="password" placeholder="password" />
+
+      <!-- ! tel input -->
+      <input type="tel" placeholder="tel" />
+
+      <!-- ! ulr input -->
+      <input type="ulr" placeholder="ulr" />
+
+      <!-- ! ulr input -->
+      <input type="ulr" placeholder="ulr" />
+
+      <!-- ! file input -->
+      <input type="file" placeholder="file" />
+      <input type="file" multiple placeholder="file" />
+
+      <!-- ! date input -->
+      <input type="date" placeholder="date" />
+
+      <!-- ! time input -->
+      <input type="time" placeholder="time" />
+
+      <!-- ! datetime-local input -->
+      <input type="datetime-local" placeholder="datetime-local" />
+
+      <!-- ! number input -->
+      <input type="number" placeholder="number" /><br>
+
+      <!-- ! color input -->
+      <input type="color" placeholder="color" /><br>
+
+      <!-- ! month input -->
+      <input type="month" placeholder="month" /><br>
+
+      <!-- ! week input -->
+      <input type="week" placeholder="week" /><br>
+
+      <!-- ! checkbox input -->
+      <input type="checkbox" placeholder="checkbox" /><br>
+
+      <!-- ! radio input -->
+      <label  for="radio">radio1</label>
+      <input checked name="radio" type="radio" placeholder="radio1" /><br>
+      <label for="radio">radio2</label>
+      <input name="radio" type="radio" placeholder="radio2" /><br>
+      <label for="radio">radio3</label>
+      <input name="radio" type="radio" placeholder="radio3" /><br>
+
+      <!-- ! select -->
+      <select name="" id="">
+        <option value="1">11</option>
+        <option value="2">22</option>
+        <option value="3">33</option>
+      </select>
+
+      <!-- ! range input -->
+      <input type="range" placeholder="range" min="0" max="100" step="1"/><br>
+
+      <!-- ! textarea -->
+      <textarea name="anyText" id=""></textarea><br>
+
+        <!-- ! search -->
+      <input type="search"><br>
+
+
+      <br><input type="submit" />
+
+      
+
+
+    </form>
+  </body>
+</html>

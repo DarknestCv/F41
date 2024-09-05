@@ -1,0 +1,106 @@
+div {
+  background-color: red;
+}
+
+body {
+  background-color: #da3b3b;
+}
+body main {
+  background-color: yellow;
+}
+body main section {
+  background-color: pink;
+}
+body footer {
+  background-color: green;
+}
+body footer div {
+  background-color: blue;
+}
+body footer div p {
+  color: red;
+}
+
+a {
+  color: white;
+  font-size: 35px;
+}
+a:hover {
+  color: rgba(255, 0, 166, 0.9058823529);
+  font-size: 55px;
+}
+a::after {
+  content: ">>>>>>>>>>>>>>";
+}
+a::before {
+  content: "<<<<<<<<<<<<<";
+}
+
+body {
+  background-color: #da3b3b;
+}
+body main {
+  background-color: yellow;
+  color: rgb(255, 230, 0);
+}
+body main section {
+  background-color: pink;
+  font-size: 15px;
+}
+body footer {
+  background-color: green;
+}
+body footer div {
+  background-color: blue;
+}
+body footer div p {
+  color: red;
+}
+body footer div p a {
+  color: white;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body ul, body ol, body li {
+  list-style-type: none;
+  background-color: yellow;
+}
+
+.input3, .input2, .input1 {
+  display: block;
+  margin: 50px;
+  border: red 2px solid;
+  border-radius: 5px;
+}
+.input3:hover, .input2:hover, .input1:hover {
+  border: red 5px solid;
+}
+
+.input1 {
+  width: 100px;
+}
+
+.input2 {
+  width: 200px;
+}
+
+.input3 {
+  width: 300px;
+}
+
+.mixin .b1 {
+  border: blue 5px solid;
+  border-radius: 0;
+}
+.mixin .b2 {
+  border: blue 5px solid;
+  border-radius: 15px;
+}
+.mixin .b3 {
+  border: blue 5px solid;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+body{
+  background-color: #ae5151;
+}
+
+/* ! текст горизонтально чи вертикально */
+
+/* #block{
+  font-size: 24px;
+  writing-mode: vertical-lr;
+} */
+
+/* ! прохова елемети*/
+
+/* #block{
+  display: none;
+  visibility: hidden;
+} */
+
+/* ! виділення */
+
+#block{
+  user-select: none;
+}
+
+/*! налаштування курсора */
+
+body{
+  cursor: cell;
+}
+
+.b0{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 15px;
+}
+
+.b1{
+  cursor: context-menu;
+}
+.b2{
+  cursor: all-scroll;
+}
+.b3{
+  cursor: e-resize;
+}
+
+
+/*! СКРОЛ */
+
+
+/* firefox */
+/* *{
+  scrollbar-width: 25px;
+  scrollbar-color: blue orange;
+} */
+
+/* chrome, Edge and safari */
+
+*::-webkit-scrollbar{
+  width: 120px;
+}
+
+*::-webkit-scrollbar-track{
+  background: rgb(145, 145, 47);
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: blue;
+  border-radius: 50px;
+  border: 10px solid orange;
+}
+
