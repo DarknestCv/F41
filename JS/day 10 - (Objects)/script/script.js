@@ -176,3 +176,55 @@
 // }
 // car.showInfo()
 
+// ! Practic work
+
+// ! 1
+const obj = {
+    name: 'Kaban',
+    surname: 'Kabachok',
+    age: 103
+};
+document.getElementById("output").innerText = JSON.stringify(obj, null, 2);
+
+// ! 2
+const book = {
+    name: 'BigBimba',
+    avtors: 'IlyhaKaban',
+    agerelease: 2035
+}
+console.log(Object.keys(book).length);
+
+// ! 3
+const student1 = {
+    name: 'Vitalik',
+    surname: 'Kabachkovskiy',
+    age: 893
+}
+const studentball = {
+    middleball: 9
+}
+const allobj = Object.assign(student1, studentball)
+console.log(allobj);
+
+// ! 4 
+const mas = [
+    {name: 'Vitalik',age: 89},
+    {name: 'Benik',age: 5},
+    {name: 'Ilyha',age: 1093},
+    {name: 'Nastya',age: 3}
+]
+
+const student21 = mas.filter(koni => koni.age > 21)
+console.log(student21);
+
+// ! 5
+
+const mas2 = [
+    {name: 'cats', price: 200},
+    {name: 'koni', price: 5000},
+    {name: 'people', price: 50},
+    {name: 'tapki', price: 3}
+]
+mas2.sort((a,b) => a.price - b.price)
+
+console.log(mas2);
