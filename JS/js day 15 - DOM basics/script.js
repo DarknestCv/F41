@@ -1,3 +1,5 @@
+// ! Видалення елемента зі сторінки - el.remove()
+
 // ! practick work 1
 // const f = (id,text) => {
 //     let a = document.getElementById(id);
