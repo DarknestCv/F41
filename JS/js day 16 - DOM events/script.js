@@ -1,12 +1,33 @@
-// ! Event -  будь яка дія користувача на сторінці54444355
-
+// ! Event -  будь яка подія користувача на сторінці
+// ! HtmlCollection - псевдо масив, в якого нема методів є дліна, index і немає методів синхронізуєця з страніцой
+// ! NodeList - псевдо масив, але в отлічії від HtmlCollection від вибирається один раз іне змінююється
 // ! click - лівий клік мишкою
 // ! dblclick - подвійний клік
 // ! contextmenu - правий клік миши
 // ! mousemove - коли мищка рухаеться на елементі
 // ! mouseover, mouseout - коли мишка заходить в елемент і виходить з нього
 // ! el.addEventListener("click", () => {console.log('click')}) - прослуховує елементів в даному випадку що станеться коли станеться клік
-// ! 
+
+// ! el.target - так можна дізнатись хто викликав подію
+// ! ЗАГЛИБЛЕННЯ -  браузер створює обєкт події  і він починає викликати іі починаючи з WINDOW
+// ! ВСПЛИТТЯ - повертаєтья назад і спрацює знову починаючи з елемента до якого ішло ЗАГЛИБЛЕННЯ
+// ! Всі підписки спрацьовують на всплитті
+
+// ! once:true - робить підписку одноразовою
+// ! capture: true - підписка спрацює на заглибленні (передаеться 3 паратметром)
+
+const pop = (e) =>{
+        e.stopPropagation() // ! зупиняє подію
+        e.preventDefault() // ! відміняє дефолтні браузеровські приколи
+        console.log('!');
+        console.log(e.target); // ! Target - той хто виклдикав подію
+        console.log(e.currentTarget); // ! currentTarget - текущий елемент
+}
+
+window.addEventListener('click', pop)
+document.addEventListener('click', pop)
+document.body.addEventListener('click', pop)
+document.body.children[0].addEventListener('click', pop)
 
 // const p = document.getElementById("q")
 
@@ -111,5 +132,6 @@ const pram = document.querySelector(".bobo")
 document.body.addEventListener("click", (event) =>{
         const tagName = event.target.tagName
         pram.textContent = `Тип тегу: ${tagName}`
+        this
 })
 

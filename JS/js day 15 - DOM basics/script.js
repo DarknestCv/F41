@@ -1,4 +1,46 @@
 // ! Видалення елемента зі сторінки - el.remove()
+// ! DOM - document object model
+
+// ?
+// ? можна отримати обєкт по clas, id, tag
+
+let div = document.getElementsByClassName('q') //! повертає HTMLCollection[]
+document.getElementById('span1') //! повертає або null, || {tag}
+
+document.querySelector() //! повертає null || {tag}
+document.querySelectorAll() //! повертає nodeList[]
+// ! console.dir() - щоб дізнітись про обєкт більше
+
+div.textContent // !можна побачити що всередені за текст
+div.textContent = 'bob' // !так можна змінити текст
+
+div.innerHTML = '<b>new text</b>' //! для того щоб записувати нові теги в блоки не як текст а як теги
+
+div.classList.add('big') // !так можна додавати класи для тегів
+div.classList.remove('') // !видалення класів
+div.classList.contains() //! перевірка чи є такий клас в тега
+div.classList.toggle('') // !можна переключати так класи для тегів
+
+div.style.color = 'green' //! так можна змінювати властивості css для тега !! МАЮТЬ НАЙВИИЩИЙ ПРИОРІТЕТ !!
+
+div.setAttribute('x', '1') // !можна так додавати атрибути 
+div.setAttribute('x') //! можна так считувати атрибути 
+div.removeAttribute('x') //! можна так видаляти атрибути 
+
+let tagd = document.createElement('p') //! так можна створювати обєкт
+tagd.textContent = 'boba'
+
+document.body.append(tagd)
+tagd.remove() //! так можна видалити тег
+
+div.getElementsByClassName() // ! так буде швидше шукати якшо елементи в цьому тезі лежить
+
+div.children //! дочерні елементи цього тега
+div.parent //! посилання на батьківській елемент для цього це буде (body)
+
+document.body //! body
+document.head //! head
+document.documentElement // ! Html
 
 // ! practick work 1
 // const f = (id,text) => {
