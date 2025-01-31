@@ -5,10 +5,10 @@ const config = {
 
 // ! JSON - java script object notation
 
-jsonConfig = JSON.stringify(config); //! Зробити JSON
+jsonConfig = JSON.stringify(config); //! stringify Зробити JSON
 
 
-let obj = JSON.parse(answer) //! зробити з JSON обєкт
+let obj = JSON.parse(answer) //! parse зробити з JSON обєкт
 
 
 
@@ -17,13 +17,13 @@ let obj = JSON.parse(answer) //! зробити з JSON обєкт
 const URL = 'https://randomuser.me/api/';
 
 // * 1
-const xhr = new XMLHttpRequest()
+const xhr = new XMLHttpRequest() // ! створюємо мережевий запит
 
 
 // * 2
-xhr.open('GET', URL)
+xhr.open('GET', URL) 
 
-xhr.onload = () => {
+xhr.onload = () => { //! onload - відповідає за оброблення подій після завантаження даних з серверу
    let human = JSON.parse(xhr.response).results[0]
 }
 
