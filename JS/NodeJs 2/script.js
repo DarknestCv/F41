@@ -38,7 +38,7 @@ fs,appendFile("./2.txt", "2", (err) =>{})
 // ! appendfile - якщо файла нема він його створе
 
 fs.unlink(path, callback)
-// ! unlinnk(path, callback) - видаляє файл
+// ! unlink(path, callback) - видаляє файл
 
 
 fs.readdir("./node_modules", (err, files) =>{
