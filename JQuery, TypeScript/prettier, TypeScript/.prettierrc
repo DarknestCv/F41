@@ -1,0 +1,5 @@
+{
+    "singleQuote": true  // одинарні лапки true - будуть false - не будуть
+}
+
+// tsLiter esLint - це більше щоб було менше помилок
